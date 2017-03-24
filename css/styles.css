@@ -44,7 +44,6 @@ figure {
   clear: both;
 }
 
-
 /* NAVIGATION styles */
 .site-logo {
   position: fixed;
@@ -99,6 +98,13 @@ figure {
   margin-top: 0.5em;
 }
 
+@media (min-width: 768px) {
+
+  .site-nav {
+    width: 60px;
+    height: 100%;
+  }
+}
 
 /* MOVIE styles */
 .movie {
