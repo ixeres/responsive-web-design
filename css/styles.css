@@ -228,6 +228,36 @@ figure {
   }
 
   .movie-overview {
-    display: block;
+    display: inline-block;
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  main {
+    margin-left: 100px;
+  }
+  #beasts {
+    height: 462.812px;
+  }
+  .movie-poster {
+    display: inline-block;
+  }
+  .movie-backdrop {
+  display: none;
+  }
+  .movie-details {
+    background-image: none;
+    display: inline-block;
+    margin: 0;
+  }
+  .movie {
+    float: left;
+    width: 33%;
+    margin-bottom: -10px;
+  }
+  .movie-overview {
+    display: none;
   }
 }
