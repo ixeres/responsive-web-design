@@ -250,31 +250,24 @@ figure {
 }
 
 @media (min-width: 992px) {
-  main article:first-child {
-    width: 100%;
-  }
   .movie {
-    overflow: hidden;
-  }
-  .movie-poster {
-    display: block;
-    width: 33.33%;
     float: left;
+  }
+  article:first-child .movie-backdrop {
+    display: inline-block;
+  }
+  .movie-backdrop {
+    display: none;
+  }
+  article:first-child {
+    width: 100%;
   }
   article:first-child .movie-poster {
     display: none;
   }
-  article:first-child .movie-backdrop {
-    display: block;
-  }
-  .movie-overview {
-    display: none;
-  }
-  article:first-child .movie-overview {
-    display: block;
-  }
-  main .movie-backdrop {
-    display: none;
+  .movie-poster {
+    display: inline-block;
+    width: 33.33%;
   }
   .movie-details {
     background-image: none;
