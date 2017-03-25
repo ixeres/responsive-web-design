@@ -236,7 +236,7 @@ figure {
     color: white;
   }
   .footer-nav-list {
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 10px;
     height: 40px;
   }
