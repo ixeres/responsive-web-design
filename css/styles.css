@@ -209,6 +209,7 @@ figure {
     height: 100%;
   }
   .site-nav-list {
+    box-sizing: content-box;
     margin-top: 76px;
   }
   .site-nav-item {
@@ -217,13 +218,13 @@ figure {
   }
   body {
     padding-bottom: 0px;
+    overflow: hidden;
   }
   main {
     margin-left: 10%;
-    width: 100%;
   }
   .movie-overview {
-    display: block;
+    display: inline-block;
   }
   footer {
     margin-left: 10%;
