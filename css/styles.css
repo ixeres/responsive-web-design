@@ -197,12 +197,13 @@ figure {
 
 @media (min-width: 768px) {
 
+  .site-header {
+  }
+
   .site-logo {
     z-index: 200;
-    height: 60px;
-    width: 60px;
-    left: 10px;
-    top: 10px;
+    height: 6%;
+    width: 6%;
   }
   .site-nav {
     width: 10%;
@@ -214,11 +215,12 @@ figure {
   }
   .site-nav-item {
     float: none;
-    width: 100%;
+    width: 6em;
+    margin: auto;
+    padding: 1em 1em;
   }
   body {
     padding-bottom: 0px;
-    overflow: hidden;
   }
   main {
     margin-left: 10%;
@@ -228,7 +230,6 @@ figure {
   }
   footer {
     margin-left: 10%;
-    width: 100%;
   }
   .footer-nav {
     width: 60%;
@@ -251,11 +252,14 @@ figure {
 }
 
 @media (min-width: 992px) {
-  .movie {
+  main {
+    overflow: hidden;
+  }
+  article {
     float: left;
   }
   article:first-child .movie-backdrop {
-    display: inline-block;
+    display: block;
   }
   .movie-backdrop {
     display: none;
@@ -263,14 +267,22 @@ figure {
   article:first-child {
     width: 100%;
   }
+  article {
+    width: 33.33%;
+    display: inline-block;
+  }
   article:first-child .movie-poster {
     display: none;
   }
   .movie-poster {
     display: inline-block;
-    width: 33.33%;
   }
-  .movie-details {
-    background-image: none;
+  .movie-overview {
+    display: none;
+  }
+  article:first-child .movie-details {
+  }
+  article:first-child .movie-details > .movie-overview {
+    display: inline-block;
   }
 }
